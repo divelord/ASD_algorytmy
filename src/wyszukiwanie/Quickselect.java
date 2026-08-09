@@ -4,6 +4,15 @@ public class Quickselect {
 
     /**
      * Algorytm Hoare'a (quickselect) do wyszukiwania k-tego najmniejszego elementu w tablicy
+     * <p>
+     * Tablica jest dzielona na dwie części za pomocą partycjonowania. Po każdym podziale
+     * sprawdza, w której części znajduje się szukany element i kontynuuje działanie
+     * na tym fragmencie tablicy.
+     * <p>
+     * Złożoność optymistyczna: O(n)
+     * Złożoność pesymistyczna: O(n^2)
+     * Złożoność przeciętna: O(n)
+     * Złożoność pamięciowa: O(1)
      *
      * @param arr tablica liczb całkowitych
      * @param k   pozycja szukanego elementu
@@ -34,6 +43,14 @@ public class Quickselect {
 
     /**
      * Algorytm pomocniczy partition
+     * <p>
+     * Przestawia elementy podtablicy tak, że elementy na lewo od pivota są niewiększe,
+     * a na prawo niemniejsze
+     * <p>
+     * Złożoność optymistyczna: O(n)
+     * Złożoność pesymistyczna: O(n)
+     * Złożoność przeciętna: O(n)
+     * Złożoność pamięciowa: O(1)
      *
      * @param arr        tablica liczb całkowitych
      * @param leftIndex  początkowy indeks przeszukiwanego fragmentu tablicy

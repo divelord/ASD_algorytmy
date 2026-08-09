@@ -3,7 +3,15 @@ package wyszukiwanie;
 public class LinearSearch {
 
     /**
-     * Algorytm wyszukiwania liniowego w ciągu nieuporządkowanym
+     * Wyszukiwanie liniowe (Linear Search) w ciągu nieuporządkowanym
+     * <p>
+     * Przegląda elementy tablicy po kolei od początku do końca,
+     * porównując każdy z nich z poszukiwaną wartością.
+     * <p>
+     * Złożoność optymistyczna: O(1)
+     * Złożoność pesymistyczna: O(n)
+     * Złożoność przeciętna: O(n)
+     * Złożoność pamięciowa: O(1)
      *
      * @param arr tablica liczb całkowitych
      * @param key szukana wartość
@@ -20,7 +28,16 @@ public class LinearSearch {
     }
 
     /**
-     * Algorytm wyszukiwania liniowego w ciągu posortowanym niemalejąco
+     * Wyszukiwanie liniowe (Linear Search) w ciągu posortowanym
+     * <p>
+     * Przegląda elementy tablicy po kolei, ale w posortowanej tablicy
+     * pozwala na wcześniejsze przerwanie algorytmu w momencie napotkania
+     * elementu większego od szukanej wartości.
+     * <p>
+     * Złożoność optymistyczna: O(1)
+     * Złożoność pesymistyczna: O(n)
+     * Złożoność przeciętna: O(n)
+     * Złożoność pamięciowa: O(1)
      *
      * @param arr posortowana niemalejąco tablica liczb całkowitych
      * @param key szukana wartość

@@ -3,7 +3,7 @@ package wyszukiwanie;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TournamentSearch {
+public class TournamentAlgorithm {
 
     /**
      * Pomocnicza klasa reprezentująca węzeł w drzewie turniejowym
@@ -19,7 +19,17 @@ public class TournamentSearch {
     }
 
     /**
-     * Algorytm wyszukiwania turniejowego znajdujący drugą najmniejszą wartość
+     * Wyszukiwanie drugiego najmniejszego elementu (Tournament Algorithm)
+     * <p>
+     * Algorytm tworzy drzewo turniejowe, w którym elementy są porównywane parami.
+     * W każdym pojedynku mniejsza wartość przechodzi do kolejnej rundy, a większa wartość
+     * zostaje zapisana jako pokonana. Po zakończeniu wszystkich rund druga najmniejsza
+     * wartość jest najmniejszą spośród elementów pokonanych przez zwycięzcę.
+     * <p>
+     * Złożoność optymistyczna: O(n)
+     * Złożoność pesymistyczna: O(n)
+     * Złożoność przeciętna: O(n)
+     * Złożoność pamięciowa: O(n)
      *
      * @param arr tablica liczb całkowitych
      * @return druga najmniejsza wartość w tablicy

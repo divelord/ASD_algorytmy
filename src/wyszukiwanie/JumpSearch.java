@@ -3,7 +3,16 @@ package wyszukiwanie;
 public class JumpSearch {
 
     /**
-     * Algorytm wyszukiwania skokowego
+     * Wyszukiwanie skokowe (Jump Search)
+     * <p>
+     * Przeszukuje posortowaną tablicę, przeskakując określoną liczbę elementów.
+     * Po znalezieniu przedziału, w którym może znajdować się szukana wartość,
+     * przeszukuje ten przedział liniowo.
+     * <p>
+     * Złożoność optymistyczna: O(1)
+     * Złożoność pesymistyczna: O(sqrt(n)) => zakładając optymalną wartość parametru k
+     * Złożoność przeciętna: O(sqrt(n)) => jw.
+     * Złożoność pamięciowa: O(1)
      *
      * @param arr posortowana niemalejąco tablica liczb całkowitych
      * @param key szukana wartość
@@ -34,6 +43,6 @@ public class JumpSearch {
         int[] arr = {1, 3, 5, 6, 7, 8, 9, 23, 45};
 
         System.out.println(search(arr, 7, 3));
-        System.out.println(search(arr, 2, 3));
+        System.out.println(search(arr, 20, 3));
     }
 }

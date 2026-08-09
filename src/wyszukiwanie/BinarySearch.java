@@ -3,7 +3,18 @@ package wyszukiwanie;
 public class BinarySearch {
 
     /**
-     * Algorytm wyszukiwania binarnego
+     * Wyszukiwanie binarne (Binary Search)
+     * <p>
+     * Przeszukuje posortowaną tablicę, dzieląc ją na pół w każdym kroku.
+     * Porównuje środkowy element z szukaną wartością i na tej podstawie
+     * odrzuca połowę tablicy, w której element nie może się znajdować.
+     * Algorytm powtarza ten proces, aż znajdzie szukaną wartość lub wyczerpie
+     * zakres poszukiwań.
+     * <p>
+     * Złożoność optymistyczna: O(1)
+     * Złożoność pesymistyczna: O(log n)
+     * Złożoność przeciętna: O(log n)
+     * Złożoność pamięciowa: O(1)
      *
      * @param arr posortowana niemalejąco tablica liczb całkowitych
      * @param key szukana wartość

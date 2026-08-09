@@ -4,8 +4,8 @@ Repozytorium zawiera implementację algorytmów w Javie omawianych w ramach prze
 
 ## Algorytmy wyszukiwania
 
-- Wyszukiwanie liniowe
-- Wyszukiwanie skokowe
-- Wyszukiwanie binarne
-- Wyszukiwanie drugiego najmniejszego elementu (algorytm turniejowy)
-- Algorytm Hoare'a (algorytm quickselect)
+- Wyszukiwanie liniowe (Linear Search)
+- Wyszukiwanie skokowe (Jump Search)
+- Wyszukiwanie binarne (Binary Search)
+- Wyszukiwanie drugiego najmniejszego elementu (Tournament Algorithm)
+- Algorytm Hoare'a (Quickselect)
