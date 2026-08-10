@@ -7,7 +7,7 @@ public class RadixSort {
     /**
      * Sortowanie pozycyjne (Radix Sort)
      * <p>
-     * Algorytm sortowania dedykowany dla ciągu liczb naturalnych. Nie porównuje elementów
+     * Algorytm sortowania dedykowany dla ciągu liczb całkowitych. Nie porównuje elementów
      * między sobą, lecz sortuje je po kolejnych pozycjach cyfr: od najmniej znaczącej (ostatniej)
      * do najbardziej znaczącej (pierwszej), wykorzystując przy każdym przejściu stabilne sortowanie
      * przez zliczanie jako procedurę pomocniczą.
@@ -15,15 +15,62 @@ public class RadixSort {
      * Złożoność optymistyczna: O(d * (n + k)) => gdzie d = liczba cyfr maxVal, k = 10 (cyfry 0..9)
      * Złożoność pesymistyczna: O(d * (n + k)) => jw.
      * Złożoność przeciętna: O(d * (n + k)) => jw.
-     * Złożoność pamięciowa: O(n + k) => jw.
+     * Złożoność pamięciowa: O(n + k) => gdzie k = 10 (cyfry 0..9)
      * <p>
      * Stabilny: tak
      *
-     * @param arr tablica liczb naturalnych
+     * @param arr tablica liczb całkowitych
      */
 
     private static void sort(int[] arr) {
         if (arr == null || arr.length < 2) {
+            return;
+        }
+
+        int negativeCount = 0;
+
+        for (int val : arr) {
+            if (val < 0) {
+                negativeCount++;
+            }
+        }
+
+        int[] negatives = new int[negativeCount];
+        int[] positives = new int[arr.length - negativeCount];
+
+        int negativeIndex = 0;
+        int positiveIndex = 0;
+
+        for (int val : arr) {
+            if (val < 0) {
+                negatives[negativeIndex++] = -val;
+            } else {
+                positives[positiveIndex++] = val;
+            }
+        }
+
+        sortNonNegative(negatives);
+        sortNonNegative(positives);
+
+        int resultIndex = 0;
+
+        for (int i = negatives.length - 1; i >= 0; i--) {
+            arr[resultIndex++] = -negatives[i];
+        }
+
+        for (int i = 0; i < positives.length; i++) {
+            arr[resultIndex++] = positives[i];
+        }
+    }
+
+    /**
+     * Metoda pomocnicza sortująca tablicę liczb nieujemnych
+     *
+     * @param arr tablica liczb nieujemnych
+     */
+
+    private static void sortNonNegative(int[] arr) {
+        if (arr.length < 2) {
             return;
         }
 
@@ -43,7 +90,7 @@ public class RadixSort {
     /**
      * Metoda pomocnicza oparta na Counting Sort
      *
-     * @param arr tablica liczb naturalnych
+     * @param arr tablica liczb nieujemnych
      * @param exp wskaźnik pozycyjny cyfry
      */
 
@@ -69,7 +116,7 @@ public class RadixSort {
     }
 
     public static void main(String[] args) {
-        int[] arr = {212, 305, 115, 202, 131};
+        int[] arr = {-12, 212, 305, 115, -234, 202, -46, 131};
 
         sort(arr);
 
