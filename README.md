@@ -9,3 +9,12 @@ Repozytorium zawiera implementację algorytmów w Javie omawianych w ramach prze
 - Wyszukiwanie binarne (Binary Search)
 - Wyszukiwanie drugiego najmniejszego elementu (Tournament Algorithm)
 - Algorytm Hoare'a (Quickselect)
+
+## Algorytmy sortowania
+
+- Sortowanie przez wybór (Selection Sort)
+- Sortowanie przez wstawianie (Insertion Sort)
+- Sortowanie przez scalanie (Merge Sort)
+- Sortowanie szybkie (Quicksort)
+- Sortowanie przez zliczanie (Counting Sort)
+- Sortowanie pozycyjne (Radix Sort)
