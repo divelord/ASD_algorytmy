@@ -11,10 +11,12 @@ public class InsertionSort {
      * znajdującymi się wcześniej i przesuwamy większe elementy w prawo,
      * aż znajdziemy dla niego właściwą pozycję.
      * <p>
-     * Złożoność optymistyczna: O(n)
-     * Złożoność pesymistyczna: O(n^2)
-     * Złożoność przeciętna: O(n^2)
-     * Złożoność pamięciowa: O(1)
+     * <ul>
+     *     <li>Złożoność optymistyczna: O(n)</li>
+     *     <li>Złożoność pesymistyczna: O(n^2)</li>
+     *     <li>Złożoność przeciętna: O(n^2)</li>
+     *     <li>Złożoność pamięciowa: O(1)</li>
+     * </ul>
      * <p>
      * Stabilny: tak
      *

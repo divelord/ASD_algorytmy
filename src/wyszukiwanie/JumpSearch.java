@@ -9,10 +9,12 @@ public class JumpSearch {
      * Po znalezieniu przedziału, w którym może znajdować się szukana wartość,
      * przeszukuje ten przedział liniowo.
      * <p>
-     * Złożoność optymistyczna: O(1)
-     * Złożoność pesymistyczna: O(sqrt(n)) => zakładając optymalną wartość parametru k
-     * Złożoność przeciętna: O(sqrt(n)) => jw.
-     * Złożoność pamięciowa: O(1)
+     * <ul>
+     *     <li>Złożoność optymistyczna: O(1)</li>
+     *     <li>Złożoność pesymistyczna: O(sqrt(n)) => zakładając optymalną wartość parametru k</li>
+     *     <li>Złożoność przeciętna: O(sqrt(n)) => jw.</li>
+     *     <li>Złożoność pamięciowa: O(1)</li>
+     * </ul>
      *
      * @param arr posortowana niemalejąco tablica liczb całkowitych
      * @param key szukana wartość
@@ -21,6 +23,10 @@ public class JumpSearch {
      */
 
     private static int search(int[] arr, int key, int k) {
+        if (arr == null || arr.length == 0 || k < 1 || k > arr.length) {
+            return -1;
+        }
+
         int i = 0;
 
         while (i < arr.length && arr[i] < key) {

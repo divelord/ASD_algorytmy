@@ -26,16 +26,23 @@ public class TournamentAlgorithm {
      * zostaje zapisana jako pokonana. Po zakończeniu wszystkich rund druga najmniejsza
      * wartość jest najmniejszą spośród elementów pokonanych przez zwycięzcę.
      * <p>
-     * Złożoność optymistyczna: O(n)
-     * Złożoność pesymistyczna: O(n)
-     * Złożoność przeciętna: O(n)
-     * Złożoność pamięciowa: O(n)
+     * <ul>
+     *     <li>Złożoność optymistyczna: O(n)</li>
+     *     <li>Złożoność pesymistyczna: O(n)</li>
+     *     <li>Złożoność przeciętna: O(n)</li>
+     *     <li>Złożoność pamięciowa: O(n)</li>
+     * </ul>
      *
      * @param arr tablica liczb całkowitych
      * @return druga najmniejsza wartość w tablicy
+     * @throws IllegalArgumentException w przypadku gdy podano null lub ma mniej niż 2 elementy
      */
 
     private static int search(int[] arr) {
+        if (arr == null || arr.length < 2) {
+            throw new IllegalArgumentException("Brak drugiej najmniejszej wartości");
+        }
+
         List<Node> currentRound = new ArrayList<>();
 
         for (int val : arr) {

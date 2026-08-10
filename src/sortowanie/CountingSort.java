@@ -13,10 +13,12 @@ public class CountingSort {
      * bez porównywania ich między sobą. Aby proces przebiegał efektywnie, dane muszą mieścić się
      * w pamięci o dostępie swobodnym (RAM)
      * <p>
-     * Złożoność optymistyczna: O(n + k) => gdzie k = maxVal - minVal + 1
-     * Złożoność pesymistyczna: O(n + k) => jw.
-     * Złożoność przeciętna: O(n + k) => jw.
-     * Złożoność pamięciowa: O(n + k) => jw.
+     * <ul>
+     *     <li>Złożoność optymistyczna: O(n + k) => gdzie k = maxVal - minVal + 1</li>
+     *     <li>Złożoność pesymistyczna: O(n + k) => jw.</li>
+     *     <li>Złożoność przeciętna: O(n + k) => jw.</li>
+     *     <li>Złożoność pamięciowa: O(n + k) => jw.</li>
+     * </ul>
      * <p>
      * Stabilny: tak
      *

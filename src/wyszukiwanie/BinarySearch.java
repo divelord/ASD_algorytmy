@@ -11,10 +11,12 @@ public class BinarySearch {
      * Algorytm powtarza ten proces, aż znajdzie szukaną wartość lub wyczerpie
      * zakres poszukiwań.
      * <p>
-     * Złożoność optymistyczna: O(1)
-     * Złożoność pesymistyczna: O(log n)
-     * Złożoność przeciętna: O(log n)
-     * Złożoność pamięciowa: O(1)
+     * <ul>
+     *     <li>Złożoność optymistyczna: O(1)</li>
+     *     <li>Złożoność pesymistyczna: O(log n)</li>
+     *     <li>Złożoność przeciętna: O(log n)</li>
+     *     <li>Złożoność pamięciowa: O(1)</li>
+     * </ul>
      *
      * @param arr posortowana niemalejąco tablica liczb całkowitych
      * @param key szukana wartość
@@ -22,6 +24,10 @@ public class BinarySearch {
      */
 
     private static int search(int[] arr, int key) {
+        if (arr == null || arr.length == 0) {
+            return -1;
+        }
+
         int left = 0;
         int right = arr.length - 1;
 

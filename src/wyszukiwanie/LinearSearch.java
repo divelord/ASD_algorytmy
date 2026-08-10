@@ -8,10 +8,12 @@ public class LinearSearch {
      * Przegląda elementy tablicy po kolei od początku do końca,
      * porównując każdy z nich z poszukiwaną wartością.
      * <p>
-     * Złożoność optymistyczna: O(1)
-     * Złożoność pesymistyczna: O(n)
-     * Złożoność przeciętna: O(n)
-     * Złożoność pamięciowa: O(1)
+     * <ul>
+     *     <li>Złożoność optymistyczna: O(1)</li>
+     *     <li>Złożoność pesymistyczna: O(n)</li>
+     *     <li>Złożoność przeciętna: O(n)</li>
+     *     <li>Złożoność pamięciowa: O(1)</li>
+     * </ul>
      *
      * @param arr tablica liczb całkowitych
      * @param key szukana wartość
@@ -19,11 +21,16 @@ public class LinearSearch {
      */
 
     private static int search(int[] arr, int key) {
+        if (arr == null || arr.length == 0) {
+            return -1;
+        }
+
         for (int index = 0; index < arr.length; index++) {
             if (arr[index] == key) {
                 return index;
             }
         }
+
         return -1;
     }
 
@@ -34,10 +41,12 @@ public class LinearSearch {
      * pozwala na wcześniejsze przerwanie algorytmu w momencie napotkania
      * elementu większego od szukanej wartości.
      * <p>
-     * Złożoność optymistyczna: O(1)
-     * Złożoność pesymistyczna: O(n)
-     * Złożoność przeciętna: O(n)
-     * Złożoność pamięciowa: O(1)
+     * <ul>
+     *     <li>Złożoność optymistyczna: O(1)</li>
+     *     <li>Złożoność pesymistyczna: O(n)</li>
+     *     <li>Złożoność przeciętna: O(n)</li>
+     *     <li>Złożoność pamięciowa: O(1)</li>
+     * </ul>
      *
      * @param arr posortowana niemalejąco tablica liczb całkowitych
      * @param key szukana wartość
@@ -45,14 +54,20 @@ public class LinearSearch {
      */
 
     private static int searchSorted(int[] arr, int key) {
+        if (arr == null || arr.length == 0) {
+            return -1;
+        }
+
         for (int index = 0; index < arr.length; index++) {
-            if (arr[index] > key) {
-                return -1;
-            }
             if (arr[index] == key) {
                 return index;
             }
+
+            if (arr[index] > key) {
+                return -1;
+            }
         }
+
         return -1;
     }
 

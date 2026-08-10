@@ -11,10 +11,12 @@ public class SelectionSort {
      * elementem ciągu i kontynuujemy to samo na ciągu zaczynającym się
      * od drugiego indeksu, dopóki bieżący ciąg ma więcej niż 1 element.
      * <p>
-     * Złożoność optymistyczna: O(n^2)
-     * Złożoność pesymistyczna: O(n^2)
-     * Złożoność przeciętna: O(n^2)
-     * Złożoność pamięciowa: O(1)
+     * <ul>
+     *     <li>Złożoność optymistyczna: O(n^2)</li>
+     *     <li>Złożoność pesymistyczna: O(n^2)</li>
+     *     <li>Złożoność przeciętna: O(n^2)</li>
+     *     <li>Złożoność pamięciowa: O(1)</li>
+     * </ul>
      * <p>
      * Stabilny: nie
      *

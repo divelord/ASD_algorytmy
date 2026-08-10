@@ -12,10 +12,13 @@ public class RadixSort {
      * do najbardziej znaczącej (pierwszej), wykorzystując przy każdym przejściu stabilne sortowanie
      * przez zliczanie jako procedurę pomocniczą.
      * <p>
-     * Złożoność optymistyczna: O(d * (n + k)) => gdzie d = liczba cyfr maxVal, k = 10 (cyfry 0..9)
-     * Złożoność pesymistyczna: O(d * (n + k)) => jw.
-     * Złożoność przeciętna: O(d * (n + k)) => jw.
-     * Złożoność pamięciowa: O(n + k) => gdzie k = 10 (cyfry 0..9)
+     * <ul>
+     *     <li>Złożoność optymistyczna: O(d * (n + k)) =>
+     *         gdzie d = liczba cyfr maxVal, k = 10 (cyfry 0..9)</li>
+     *     <li>Złożoność pesymistyczna: O(d * (n + k)) => jw.</li>
+     *     <li>Złożoność przeciętna: O(d * (n + k)) => jw.</li>
+     *     <li>Złożoność pamięciowa: O(n + k) => gdzie k = 10 (cyfry 0..9)</li>
+     * </ul>
      * <p>
      * Stabilny: tak
      *

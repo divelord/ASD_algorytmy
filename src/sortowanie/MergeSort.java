@@ -11,10 +11,12 @@ public class MergeSort {
      * rekurencyjnie sortuje każdą z nich, a następnie scala
      * posortowane połówki w jedną całość za pomocą funkcji merge.
      * <p>
-     * Złożoność optymistyczna: O(n log n)
-     * Złożoność pesymistyczna: O(n log n)
-     * Złożoność przeciętna: O(n log n)
-     * Złożoność pamięciowa: O(n)
+     * <ul>
+     *     <li>Złożoność optymistyczna: O(n log n)</li>
+     *     <li>Złożoność pesymistyczna: O(n log n)</li>
+     *     <li>Złożoność przeciętna: O(n log n)</li>
+     *     <li>Złożoność pamięciowa: O(n)</li>
+     * </ul>
      * <p>
      * Stabilny: tak
      *
@@ -43,10 +45,12 @@ public class MergeSort {
     /**
      * Funkcja pomocnicza scalająca dwa posortowane ciągi w jedną posortowaną tablicę
      * <p>
-     * Złożoność optymistyczna: O(n)
-     * Złożoność przeciętna: O(n)
-     * Złożoność pesymistyczna: O(n)
-     * Złożoność pamięciowa: O(1)
+     * <ul>
+     *     <li>Złożoność optymistyczna: O(n)</li>
+     *     <li>Złożoność przeciętna: O(n)</li>
+     *     <li>Złożoność pesymistyczna: O(n)</li>
+     *     <li>Złożoność pamięciowa: O(1)</li>
+     * </ul>
      *
      * @param arr      tablica docelowa
      * @param arrLeft  lewy posortowany podciąg

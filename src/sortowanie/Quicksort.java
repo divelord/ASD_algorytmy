@@ -11,10 +11,12 @@ public class Quicksort {
      * wybiera pivot i za pomocą metody partition dzieli tablicę na dwie podtablice.
      * Następnie rekurencyjnie sortuje obie części niezależnie.
      * <p>
-     * Złożoność optymistyczna: O(n log n)
-     * Złożoność pesymistyczna: O(n^2)
-     * Złożoność przeciętna: O(n log n)
-     * Złożoność pamięciowa: O(1)
+     * <ul>
+     *     <li>Złożoność optymistyczna: O(n log n)</li>
+     *     <li>Złożoność pesymistyczna: O(n^2)</li>
+     *     <li>Złożoność przeciętna: O(n log n)</li>
+     *     <li>Złożoność pamięciowa: O(1)</li>
+     * </ul>
      * <p>
      * Stabilny: nie
      *
@@ -51,10 +53,12 @@ public class Quicksort {
      * Przestawia elementy podtablicy tak, że elementy na lewo od pivota są niewiększe,
      * a na prawo niemniejsze.
      * <p>
-     * Złożoność optymistyczna: O(n)
-     * Złożoność pesymistyczna: O(n)
-     * Złożoność przeciętna: O(n)
-     * Złożoność pamięciowa: O(1)
+     * <ul>
+     *     <li>Złożoność optymistyczna: O(n)</li>
+     *     <li>Złożoność pesymistyczna: O(n)</li>
+     *     <li>Złożoność przeciętna: O(n)</li>
+     *     <li>Złożoność pamięciowa: O(1)</li>
+     * </ul>
      *
      * @param arr        tablica liczb całkowitych
      * @param leftIndex  początkowy indeks przeszukiwanego fragmentu tablicy

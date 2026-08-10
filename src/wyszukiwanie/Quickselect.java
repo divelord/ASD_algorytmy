@@ -9,18 +9,22 @@ public class Quickselect {
      * sprawdza, w której części znajduje się szukany element i kontynuuje działanie
      * na tym fragmencie tablicy.
      * <p>
-     * Złożoność optymistyczna: O(n)
-     * Złożoność pesymistyczna: O(n^2)
-     * Złożoność przeciętna: O(n)
-     * Złożoność pamięciowa: O(1)
+     * <ul>
+     *     <li>Złożoność optymistyczna: O(n)</li>
+     *     <li>Złożoność pesymistyczna: O(n^2)</li>
+     *     <li>Złożoność przeciętna: O(n)</li>
+     *     <li>Złożoność pamięciowa: O(1)</li>
+     * </ul>
      *
      * @param arr tablica liczb całkowitych
      * @param k   pozycja szukanego elementu
      * @return wartość k-tego najmniejszego elementu w tablicy
+     * @throws IllegalArgumentException w przypadku gdy tablica wynosi null, jest pusta
+     *                                  lub wartość k jest nieprawidłowa
      */
 
     private static int kthSmallest(int[] arr, int k) {
-        if (arr == null || k < 1 || k > arr.length) {
+        if (arr == null || arr.length == 0 || k < 1 || k > arr.length) {
             throw new IllegalArgumentException("Pusta tablica lub nieprawidłowa wartość k");
         }
 
@@ -59,10 +63,12 @@ public class Quickselect {
      * Przestawia elementy podtablicy tak, że elementy na lewo od pivota są niewiększe,
      * a na prawo niemniejsze.
      * <p>
-     * Złożoność optymistyczna: O(n)
-     * Złożoność pesymistyczna: O(n)
-     * Złożoność przeciętna: O(n)
-     * Złożoność pamięciowa: O(1)
+     * <ul>
+     *     <li>Złożoność optymistyczna: O(n)</li>
+     *     <li>Złożoność pesymistyczna: O(n)</li>
+     *     <li>Złożoność przeciętna: O(n)</li>
+     *     <li>Złożoność pamięciowa: O(1)</li>
+     * </ul>
      *
      * @param arr        tablica liczb całkowitych
      * @param leftIndex  początkowy indeks przeszukiwanego fragmentu tablicy
