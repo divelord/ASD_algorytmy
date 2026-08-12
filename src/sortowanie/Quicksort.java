@@ -15,7 +15,7 @@ public class Quicksort {
      *     <li>Złożoność optymistyczna: O(n log n)</li>
      *     <li>Złożoność pesymistyczna: O(n^2)</li>
      *     <li>Złożoność przeciętna: O(n log n)</li>
-     *     <li>Złożoność pamięciowa: O(1)</li>
+     *     <li>Złożoność pamięciowa: O(1) (in-place)</li>
      * </ul>
      * <p>
      * Stabilny: nie
