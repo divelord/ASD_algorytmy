@@ -18,3 +18,11 @@ Repozytorium zawiera implementację algorytmów w Javie omawianych w ramach prze
 - Sortowanie szybkie (Quicksort)
 - Sortowanie przez zliczanie (Counting Sort)
 - Sortowanie pozycyjne (Radix Sort)
+
+## Algorytmy rekurencyjne
+
+- Silnia (Factorial)
+- Ciąg Fibonacciego (Fibonacci) - rekurencja i wzór Bineta
+- Wieża Hanoi (Tower of Hanoi)
+- Rekurencyjne wyszukiwanie binarne (Recursive Binary Search)
+- Rekurencyjne wyszukiwanie minimum (Recursive Min Search)
